@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GESTION DE CLIENTES</title>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>GESTION DE CLIENTES</h1>
+  <form id="clienteForm">
+    <input type="hidden" id="clienteId">
+    <label>Nombre: <input type="text" id="nombre" required></label><br>
+    <label>Apellido: <input type="text" id="apellido" required></label><br>
+    <label>Cédula: <input type="text" id="cedula" required></label><br>
+    <label>Correo: <input type="email" id="correo" required></label><br>
+    <button type="submit">Guardar</button>
+  </form>
+  
+  <h2>Clientes</h2>
+  <table id="clientesTable">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Cédula</th>
+        <th>Correo</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aquí se agregarán dinámicamente las filas de los clientes -->
+    </tbody>
+  </table>
+  
+</body>
+</html>
